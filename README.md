@@ -48,7 +48,7 @@ To install using third party IDE like PyCharm:
 
 From IDLE:
 	1. Click file > open 
-	2. Location launcher.py within the code folder
+	2. Locate launcher.py within the code folder
 	3. Press F5
 
 From third party IDE:
