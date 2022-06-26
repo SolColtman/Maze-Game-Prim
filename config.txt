@@ -1,0 +1,11 @@
+blue
+8
+20
+800
+500
+
+#line 0 = colour of sprite
+#line 1 = maze size (horizontal/vertical size)
+#line 2 = resolution of blocks
+#line 3 = height of screen
+#line 4 = width of screen
