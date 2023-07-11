@@ -1,7 +1,7 @@
 import random
 import os
 
-config = os.path.dirname(os.getcwd()) + "/Code/config.txt"
+config = os.path.dirname(os.getcwd()) + "/Maze-Game-Prim/config.txt"
 f = open(config, 'r')  # gets configuration from local txt file
 lines = f.readlines()
 mazeSize = int(lines[1])
@@ -208,7 +208,7 @@ class MazeGenerator:
         for x in range(0, (mazeSize - 1)):
             self.maze[0][x] = 'w'
 
-        map = os.path.dirname(os.getcwd()) + "/Code/map.txt"
+        map = os.path.dirname(os.getcwd()) + "/Maze-Game-Prim/map.txt"
         file = open(map, 'w')
         for x in range(0, len(self.maze)):
             for y in range(0, len(self.maze[x])):

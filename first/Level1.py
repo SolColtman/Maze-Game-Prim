@@ -138,7 +138,7 @@ class Game:
 
     def load(self):
         self.map = []
-        map_location=os.path.dirname(os.getcwd())+"/Code/map.txt"
+        map_location=os.path.dirname(os.getcwd())+"/Maze-Game-Prim/map.txt"
         file=open(map_location, 'r')
         for line in file:
             self.map.append(line)

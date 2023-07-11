@@ -2,10 +2,6 @@ import tkinter as tk
 import time
 import sqlite3 as sql
 from tkinter import messagebox, Toplevel, END
-import tkinter as tk
-import time
-import sqlite3 as sql
-from tkinter import messagebox, Toplevel, END
 
 connection=sql.connect('database1.db')  # open connection to database
 c=connection.cursor()

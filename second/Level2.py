@@ -11,8 +11,8 @@ monitor_height=tempWindow.winfo_screenheight()
 #print(monitor_width, monitor_height)
 tempWindow.withdraw()
 
-score=os.path.dirname(os.getcwd())+"/Code/score.txt"
-config=os.path.dirname(os.getcwd())+"/Code/config.txt"
+score=os.path.dirname(os.getcwd())+"/Maze-Game-Prim/score.txt"
+config=os.path.dirname(os.getcwd())+"/Maze-Game-Prim/config.txt"
 f = open(config, 'r')  # gets configuration from local txt file
 lines = f.readlines()
 colour = str(lines[0])
@@ -45,7 +45,7 @@ if mazeSize==35:
     x_axis_modifier-=180
 
 
-font_location=os.path.dirname(os.getcwd())+"/Code/alarm_clock.ttf"
+font_location=os.path.dirname(os.getcwd())+"/Maze-Game-Prim/alarm_clock.ttf"
 pygame.font.init()  # initialises font selection
 my_font=pygame.font.Font(font_location, font_size)
 screen_text=my_font.render("test", True, (255,45,0))
@@ -136,7 +136,7 @@ class Game:
 
     def load(self):
         self.map = []
-        map_location=os.path.dirname(os.getcwd())+"/Code/map.txt"
+        map_location=os.path.dirname(os.getcwd())+"/Maze-Game-Prim/map.txt"
         file=open(map_location, 'r')
         for line in file:
             self.map.append(line)
